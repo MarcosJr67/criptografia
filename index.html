@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <main class="apresentacao">
+        <img src="img/Logologo.svg" alt="" class="apresentacao__logo">
+        <section class="apresentacao__entrada">
+            <textarea id="textoEntrada" cols="40" rows="10" class="apresentacao__entrada__texto"
+                placeholder="Digite seu texto"></textarea>
+
+            <!--Aviso-->
+            <div class="apresentacao__entrada__aviso">
+                <p class="apresentacao__entrada__aviso__esclamacao">!</p>
+                <p class="apresentacao__entrada__aviso__texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <!--Area dos botões-->
+            <div class="apresentacao__entrada__botoes">
+                <button class="apresentacao__entrada__botoes__criptografia"
+                    onclick="criptografar()">Criptografar</button>
+                <button class="apresentacao__entrada__botoes__descriptografar"
+                    onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <!--Area de saida do resultado da criptografia-->
+        <div class="apresentacao__saida" id="apresentacaoSaida">
+            <p class="apresentacao__saida__resultado" id="resultado"></p>
+            <img src="img/High quality products 1 1img.svg" alt="" id="imagemSaida">
+            <div class="apresentacao__saida__textos" id="apresentacaoTexto">
+                <h2 class="apresentacao__saida__textos__titulo" id="tituloSaida"></h2>
+                <p class="apresentacao__entrada__texto__paragrafo" id="paragrafo"></p>
+            </div>
+        </div>
+    </main>
+    <script src="criptografar.js"></script>
+</body>
+
+</html>
