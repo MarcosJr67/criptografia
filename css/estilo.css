@@ -21,7 +21,6 @@ body {
 .apresentacao {
     display: flex;
     align-items: flex-start;
-    height: 100vh;
 }
 
 .apresentacao__logo {
@@ -48,7 +47,7 @@ body {
 }
 
 .apresentacao__entrada__aviso {
-    margin: 10% 0 0 0;
+    margin: 30% 0 0 0;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -77,8 +76,8 @@ body {
 }
 
 .apresentacao__entrada__botoes {
-    width: 100%;
-    margin: 0.5% 0 0 0;
+    width: 680px;
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
     gap: 24px;
@@ -135,9 +134,8 @@ body {
 .apresentacao__saida {
     display: flex;
     flex-direction: column;
-    width: 28%;
-    height: 750px;
-    margin-left: 1%;
+    width: 400px;
+    height: 944px;
     background: rgba(255, 255, 255, 1);
     justify-content: center;
     align-items: center;
