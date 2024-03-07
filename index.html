@@ -10,35 +10,43 @@
 
 <body>
     <main class="apresentacao">
+        <!--Area logo-->
         <img src="img/Logologo.svg" alt="" class="apresentacao__logo">
-        <section class="apresentacao__entrada">
-            <textarea id="textoEntrada" cols="38" rows="9" class="apresentacao__entrada__texto"
-                placeholder="Digite seu texto"></textarea>
 
-            <!--Aviso-->
+        <div class="apresentacao__entrada">
+            <!--Area de entrada do texto-->
+            <textarea class="apresentacao__entrada__texto" placeholder="Digite seu texto" id="textoEntrada"></textarea>
+
+            <!--mensagem de aviso, podia ser melhor-->
             <div class="apresentacao__entrada__aviso">
-                <p class="apresentacao__entrada__aviso__esclamacao">!</p>
-                <p class="apresentacao__entrada__aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                <img src="img/Vectoresclamacao.svg" alt="" class="apresentacao__entrada__aviso__esclamacao">
+                <p class="apresentacao__entrada__aviso__paragrafo">Apenas letras minúsculas e sem acento.</p>
             </div>
 
-            <!--Area dos botões-->
+            <!--Area dos botões de criptografar e descriptografar-->
             <div class="apresentacao__entrada__botoes">
-                <button class="apresentacao__entrada__botoes__criptografia"
+                <button class="apresentacao__entrada__botoes__criptografar"
                     onclick="criptografar()">Criptografar</button>
                 <button class="apresentacao__entrada__botoes__descriptografar"
                     onclick="descriptografar()">Descriptografar</button>
             </div>
-        </section>
 
-        <!--Area de saida do resultado da criptografia-->
+        </div>
+
+        <!--Area de saida do resultado-->
         <div class="apresentacao__saida" id="apresentacaoSaida">
-            <p class="apresentacao__saida__resultado" id="resultado"></p>
-            <img src="img/High quality products 1 1img.svg" alt="" id="imagemSaida">
+            <img src="img/High quality products 1 1img.svg" alt="" class="apresentacao__saida__img" id="imagemSaida">
             <div class="apresentacao__saida__textos" id="apresentacaoTexto">
-                <h2 class="apresentacao__saida__textos__titulo" id="tituloSaida"></h2>
-                <p class="apresentacao__entrada__texto__paragrafo" id="paragrafo"></p>
+                <h2 class="apresentacao__saida__textos__titulo" id="resultado">Nenhuma mensagem encontrada</h2>
+                <p class="apresentacao__saida__textos__paragrafo" id="paragrafo">Digite um texto que você deseja
+                    criptografar ou
+                    descriptografar.</p>
+            </div>
+            <div id="botaoCopiar" class="apresentacao__saida__btcopia" style="display: none;">
+                <button class="apresentacao__saida__btcopia__botao" onclick="copiarTxt()">Copiar</button>
             </div>
         </div>
+
     </main>
     <script src="criptografar.js"></script>
 </body>
